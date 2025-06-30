@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Visibility</title>
+    <style>
+        body {
+            background: #111827;
+            color: white;
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .test-element {
+            background: #1f2937;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #374151;
+        }
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .services-section {
+            padding: 80px 0;
+            background: rgba(31, 41, 55, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div>
+            <h1 class="hero-title-1">Título Principal</h1>
+            <h2 class="hero-title-2">Subtítulo</h2>
+            <p class="hero-subtitle">Descripción del hero</p>
+            <div class="hero-buttons">
+                <button>Botón 1</button>
+                <button>Botón 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-section">
+        <h2 class="services-title">Servicios</h2>
+        <p class="services-subtitle">Descripción de servicios</p>
+        <div class="service-card test-element">Tarjeta de Servicio 1</div>
+        <div class="service-card test-element">Tarjeta de Servicio 2</div>
+        <div class="service-card test-element">Tarjeta de Servicio 3</div>
+    </div>
+
+    <script>
+        // Simulamos el comportamiento del script real
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Testing visibility...');
+            
+            const elements = [
+                '.hero-title-1', '.hero-title-2', '.hero-subtitle', '.hero-buttons',
+                '.services-title', '.services-subtitle', '.service-card'
+            ];
+            
+            elements.forEach(selector => {
+                const els = document.querySelectorAll(selector);
+                console.log(`${selector}: ${els.length} elements found`);
+                els.forEach(el => {
+                    console.log(`Element visible: ${el.offsetHeight > 0}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

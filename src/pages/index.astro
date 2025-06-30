@@ -1,0 +1,587 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Desarrollador Freelance - .NET, Blazor, Node.js, Nest.js, Angular">
+  <main class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            MLDev
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#inicio" class="hover:text-blue-400 transition-colors">Inicio</a>
+            <a href="#servicios" class="hover:text-blue-400 transition-colors">Servicios</a>
+            <a href="#tecnologias" class="hover:text-blue-400 transition-colors">Tecnologías</a>
+            <!-- <a href="#proyectos" class="hover:text-blue-400 transition-colors">Proyectos</a> -->
+            <a href="#contacto" class="hover:text-blue-400 transition-colors">Contacto</a>
+          </div>
+          <button class="md:hidden hamburger" id="hamburger">
+            <span class="block w-6 h-0.5 bg-white mb-1"></span>
+            <span class="block w-6 h-0.5 bg-white mb-1"></span>
+            <span class="block w-6 h-0.5 bg-white"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="min-h-screen h-screen flex items-center justify-center relative overflow-hidden pt-20">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+      <div class="container mx-auto px-6 text-center relative z-10 py-12">
+        <div class="hero-content max-w-6xl mx-auto">
+          <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 leading-tight">
+            <span class="block hero-title-1 mb-2">Desarrollador</span>
+            <span class="block hero-title-2 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Freelance
+            </span>
+          </h1>
+          <p class="text-2xl md:text-3xl lg:text-4xl mb-12 text-gray-300 max-w-4xl mx-auto hero-subtitle leading-relaxed">
+            Creo soluciones web robustas y escalables con <strong class="text-blue-400">.NET</strong>, <strong class="text-purple-400">Blazor</strong>, <strong class="text-green-400">Node.js</strong>, <strong class="text-yellow-400">Nest.js</strong> y <strong class="text-red-400">Angular</strong>
+          </p>
+          <div class="space-x-4 hero-buttons">
+            <a href="#contacto" class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-10 py-5 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-lg">
+              Trabajemos Juntos
+            </a>
+            <a href="#proyectos" class="inline-block border-2 border-blue-400 hover:bg-blue-400 hover:text-gray-900 px-10 py-5 rounded-lg font-semibold transition-all duration-300 text-lg">
+              Ver Proyectos
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Animated background elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="floating-element absolute top-32 left-10 w-24 h-24 bg-blue-500/15 rounded-full"></div>
+        <div class="floating-element absolute top-48 right-16 w-40 h-40 bg-purple-500/15 rounded-full"></div>
+        <div class="floating-element absolute bottom-48 left-1/4 w-20 h-20 bg-indigo-500/15 rounded-full"></div>
+        <div class="floating-element absolute bottom-32 right-1/3 w-32 h-32 bg-pink-500/15 rounded-full"></div>
+        <div class="floating-element absolute top-1/2 left-16 w-16 h-16 bg-cyan-500/15 rounded-full"></div>
+        <div class="floating-element absolute top-1/3 right-8 w-28 h-28 bg-yellow-500/10 rounded-full"></div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-gray-800/50" style="background-color: rgba(31, 41, 55, 0.5);">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 services-title" style="color: white; font-size: 3rem;">
+            Mis <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent" style="background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; background-clip: text; color: transparent;">Servicios</span>
+          </h2>
+          <p class="text-xl text-gray-300 max-w-2xl mx-auto services-subtitle" style="color: #d1d5db; font-size: 1.25rem; max-width: 42rem; margin: 0 auto;">
+            Ofrezco soluciones completas de desarrollo web, desde la conceptualización hasta la implementación
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+          <div class="service-card bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-blue-500 transition-all duration-300" style="background-color: #1f2937; padding: 2rem; border-radius: 0.75rem; border: 1px solid #374151; transition: all 0.3s;">
+            <div class="text-4xl mb-4" style="font-size: 2.5rem; margin-bottom: 1rem;">🌐</div>
+            <h3 class="text-2xl font-bold mb-4 text-blue-400" style="color: #60a5fa; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Desarrollo Web Full-Stack</h3>
+            <p class="text-gray-300 mb-6" style="color: #d1d5db; margin-bottom: 1.5rem;">
+              Aplicaciones web completas con backend robusto y frontend moderno e intuitivo.
+            </p>
+            <ul class="text-sm text-gray-400 space-y-2" style="color: #9ca3af; font-size: 0.875rem;">
+              <li style="margin-bottom: 0.5rem;">• APIs RESTful con .NET Core</li>
+              <li style="margin-bottom: 0.5rem;">• SPAs con Angular y Blazor</li>
+              <li style="margin-bottom: 0.5rem;">• Bases de datos SQL Server/PostgreSQL</li>
+            </ul>
+          </div>
+          
+          <div class="service-card bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-300" style="background-color: #1f2937; padding: 2rem; border-radius: 0.75rem; border: 1px solid #374151; transition: all 0.3s;">
+            <div class="text-4xl mb-4" style="font-size: 2.5rem; margin-bottom: 1rem;">⚡</div>
+            <h3 class="text-2xl font-bold mb-4 text-purple-400" style="color: #c084fc; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">APIs y Microservicios</h3>
+            <p class="text-gray-300 mb-6" style="color: #d1d5db; margin-bottom: 1.5rem;">
+              Servicios escalables y eficientes para conectar tus aplicaciones y sistemas.
+            </p>
+            <ul class="text-sm text-gray-400 space-y-2" style="color: #9ca3af; font-size: 0.875rem;">
+              <li style="margin-bottom: 0.5rem;">• Node.js con Express y Nest.js</li>
+              <li style="margin-bottom: 0.5rem;">• Arquitectura de microservicios</li>
+              <li style="margin-bottom: 0.5rem;">• Integración con bases de datos</li>
+            </ul>
+          </div>
+          
+          <div class="service-card bg-gray-800 p-8 rounded-xl border border-gray-700 hover:border-indigo-500 transition-all duration-300" style="background-color: #1f2937; padding: 2rem; border-radius: 0.75rem; border: 1px solid #374151; transition: all 0.3s;">
+            <div class="text-4xl mb-4" style="font-size: 2.5rem; margin-bottom: 1rem;">📱</div>
+            <h3 class="text-2xl font-bold mb-4 text-indigo-400" style="color: #818cf8; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Aplicaciones Modernas</h3>
+            <p class="text-gray-300 mb-6" style="color: #d1d5db; margin-bottom: 1.5rem;">
+              Interfaces de usuario reactivas y responsive para cualquier dispositivo.
+            </p>
+            <ul class="text-sm text-gray-400 space-y-2" style="color: #9ca3af; font-size: 0.875rem;">
+              <li style="margin-bottom: 0.5rem;">• Angular con TypeScript</li>
+              <li style="margin-bottom: 0.5rem;">• Blazor WebAssembly y Server</li>
+              <li style="margin-bottom: 0.5rem;">• PWAs y SPAs optimizadas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="tecnologias" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 tech-title">
+            <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Tecnologías</span>
+            que Domino
+          </h2>
+          <p class="text-xl text-gray-300 max-w-2xl mx-auto tech-subtitle">
+            Stack tecnológico moderno para crear soluciones robustas y escalables
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="tech-card group">
+            <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-8 rounded-xl text-center transform transition-all duration-300 group-hover:scale-105">
+              <div class="text-6xl mb-4">🔷</div>
+              <h3 class="text-2xl font-bold mb-2">.NET Core</h3>
+              <p class="text-blue-100">Framework robusto para APIs y aplicaciones enterprise</p>
+            </div>
+          </div>
+          
+          <div class="tech-card group">
+            <div class="bg-gradient-to-br from-purple-600 to-purple-800 p-8 rounded-xl text-center transform transition-all duration-300 group-hover:scale-105">
+              <div class="text-6xl mb-4">🔥</div>
+              <h3 class="text-2xl font-bold mb-2">Blazor</h3>
+              <p class="text-purple-100">Apps web interactivas con C# y WebAssembly</p>
+            </div>
+          </div>
+          
+          <div class="tech-card group">
+            <div class="bg-gradient-to-br from-green-600 to-green-800 p-8 rounded-xl text-center transform transition-all duration-300 group-hover:scale-105">
+              <div class="text-6xl mb-4">🟢</div>
+              <h3 class="text-2xl font-bold mb-2">Node.js</h3>
+              <p class="text-green-100">Runtime JavaScript para servicios backend eficientes</p>
+            </div>
+          </div>
+          
+          <div class="tech-card group">
+            <div class="bg-gradient-to-br from-red-500 to-red-700 p-8 rounded-xl text-center transform transition-all duration-300 group-hover:scale-105">
+              <div class="text-6xl mb-4">🚀</div>
+              <h3 class="text-2xl font-bold mb-2">Nest.js</h3>
+              <p class="text-red-100">Framework Node.js escalable con TypeScript</p>
+            </div>
+          </div>
+          
+          <div class="tech-card group">
+            <div class="bg-gradient-to-br from-red-600 to-red-800 p-8 rounded-xl text-center transform transition-all duration-300 group-hover:scale-105">
+              <div class="text-6xl mb-4">🅰️</div>
+              <h3 class="text-2xl font-bold mb-2">Angular</h3>
+              <p class="text-red-100">Framework para aplicaciones web dinámicas y escalables</p>
+            </div>
+          </div>
+          
+          <div class="tech-card group">
+            <div class="bg-gradient-to-br from-purple-600 to-purple-800 p-8 rounded-xl text-center transform transition-all duration-300 group-hover:scale-105">
+              <div class="text-6xl mb-4">🗃️</div>
+              <h3 class="text-2xl font-bold mb-2">SQL Server</h3>
+              <p class="text-purple-100">Base de datos enterprise para aplicaciones críticas</p>
+            </div>
+          </div>
+          
+          <div class="tech-card group">
+            <div class="bg-gradient-to-br from-indigo-600 to-indigo-800 p-8 rounded-xl text-center transform transition-all duration-300 group-hover:scale-105">
+              <div class="text-6xl mb-4">🐘</div>
+              <h3 class="text-2xl font-bold mb-2">PostgreSQL</h3>
+              <p class="text-indigo-100">Base de datos open source potente y confiable</p>
+            </div>
+          </div>
+          
+          <div class="tech-card group">
+            <div class="bg-gradient-to-br from-gray-600 to-gray-800 p-8 rounded-xl text-center transform transition-all duration-300 group-hover:scale-105">
+              <div class="text-6xl mb-4">☁️</div>
+              <h3 class="text-2xl font-bold mb-2">Cloud Services</h3>
+              <p class="text-gray-100">Despliegue en Azure, AWS y otros proveedores cloud</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="proyectos" class="py-20 bg-gray-800/50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 projects-title">
+            Proyectos <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Destacados</span>
+          </h2>
+          <p class="text-xl text-gray-300 max-w-2xl mx-auto projects-subtitle">
+            Algunos ejemplos de mi trabajo con diferentes tecnologías y industrias
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="project-card bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300">
+            <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+              <div class="text-white text-6xl">💼</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Sistema de Gestión Empresarial</h3>
+              <p class="text-gray-300 mb-4">ERP completo desarrollado con .NET Core y Blazor para automatizar procesos empresariales.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-blue-600 text-xs px-2 py-1 rounded">.NET Core</span>
+                <span class="bg-purple-600 text-xs px-2 py-1 rounded">Blazor</span>
+                <span class="bg-purple-600 text-xs px-2 py-1 rounded">SQL Server</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-green-500 transition-all duration-300">
+            <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+              <div class="text-white text-6xl">🛒</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">E-commerce API</h3>
+              <p class="text-gray-300 mb-4">API RESTful escalable con Nest.js para plataforma de comercio electrónico con miles de productos.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-green-600 text-xs px-2 py-1 rounded">Node.js</span>
+                <span class="bg-red-500 text-xs px-2 py-1 rounded">Nest.js</span>
+                <span class="bg-indigo-600 text-xs px-2 py-1 rounded">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500 transition-all duration-300">
+            <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+              <div class="text-white text-6xl">📊</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Dashboard Analítico</h3>
+              <p class="text-gray-300 mb-4">Aplicación web para visualización de datos en tiempo real con gráficos interactivos y reportes.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-red-600 text-xs px-2 py-1 rounded">Angular</span>
+                <span class="bg-blue-600 text-xs px-2 py-1 rounded">.NET Core</span>
+                <span class="bg-orange-600 text-xs px-2 py-1 rounded">Chart.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 contact-title">
+            ¿Listo para <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Empezar?</span>
+          </h2>
+          <p class="text-xl text-gray-300 max-w-2xl mx-auto contact-subtitle">
+            Conversemos sobre tu proyecto y cómo puedo ayudarte a hacerlo realidad
+          </p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="contact-info">
+              <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <div class="text-2xl mr-4">📧</div>
+                  <div>
+                    <p class="text-gray-300">Email</p>
+                    <a href="mailto:michelelanza07@gmail.com" class="text-blue-400">michelelanza07@gmail.com</a>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="text-2xl mr-4">💬</div>
+                  <div>
+                    <p class="text-gray-300">WhatsApp</p>
+                    <p class="text-blue-400">+58 424-113-7512</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="text-2xl mr-4">🔗</div>
+                  <div>
+                    <p class="text-gray-300">LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/michelelanzadlm" class="text-blue-400">https://www.linkedin.com/in/michelelanzadlm</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-form">
+              <form id="contact-form" class="space-y-6">
+                <div>
+                  <label for="nombre" class="block text-sm font-medium mb-2">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors">
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                  <input type="email" id="email" name="email" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors">
+                </div>
+                <div>
+                  <label for="proyecto" class="block text-sm font-medium mb-2">Cuéntame sobre tu proyecto</label>
+                  <textarea id="proyecto" name="proyecto" rows="4" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                  <span id="btn-text">Enviar Mensaje</span>
+                  <span id="btn-loading" class="hidden">Enviando...</span>
+                </button>
+              </form>
+              
+              <!-- Mensaje de éxito/error -->
+              <div id="form-message" class="mt-4 p-4 rounded-lg hidden">
+                <p id="message-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+      <div class="container mx-auto px-6 text-center">
+        <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+          MLDev
+        </div>
+        <p class="text-gray-400">
+          © 2025 MLDev. Desarrollador Freelance especializado en .NET, Node.js y Angular.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <style>
+    /* Estilos básicos para asegurar visibilidad */
+    .bg-gray-900 { background-color: #111827; }
+    .bg-gray-800 { background-color: #1f2937; }
+    .text-white { color: white; }
+    .text-gray-300 { color: #d1d5db; }
+    .text-blue-400 { color: #60a5fa; }
+    .text-purple-400 { color: #c084fc; }
+    .text-indigo-400 { color: #818cf8; }
+    .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+    .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .mb-16 { margin-bottom: 4rem; }
+    .mb-6 { margin-bottom: 1.5rem; }
+    .text-4xl { font-size: 2.25rem; }
+    .text-xl { font-size: 1.25rem; }
+    .font-bold { font-weight: 700; }
+    .text-center { text-align: center; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    
+    /* Tipografía mejorada para hero */
+    .text-6xl { font-size: 3.75rem; line-height: 1; }
+    .text-8xl { font-size: 6rem; line-height: 1; }
+    .text-9xl { font-size: 8rem; line-height: 1; }
+    .text-2xl { font-size: 1.5rem; line-height: 1.5; }
+    .text-3xl { font-size: 1.875rem; line-height: 1.4; }
+    .text-4xl { font-size: 2.25rem; line-height: 1.3; }
+    .leading-tight { line-height: 1.25; }
+    .leading-relaxed { line-height: 1.625; }
+    .mb-8 { margin-bottom: 2rem; }
+    .mb-12 { margin-bottom: 3rem; }
+    .px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
+    .py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+    .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+    .text-lg { font-size: 1.125rem; }
+    .max-w-4xl { max-width: 56rem; }
+    .max-w-6xl { max-width: 72rem; }
+    .text-green-400 { color: #4ade80; }
+    .text-red-400 { color: #f87171; }
+    .text-yellow-400 { color: #facc15; }
+    .w-24 { width: 6rem; }
+    .h-24 { height: 6rem; }
+    .w-40 { width: 10rem; }
+    .h-40 { height: 10rem; }
+    .w-16 { width: 4rem; }
+    .h-16 { height: 4rem; }
+    .w-28 { width: 7rem; }
+    .h-28 { height: 7rem; }
+    .w-32 { width: 8rem; }
+    .h-32 { height: 8rem; }
+    .bg-cyan-500\/15 { background-color: rgba(6, 182, 212, 0.15); }
+    .bg-yellow-500\/10 { background-color: rgba(234, 179, 8, 0.10); }
+    .bg-blue-500\/15 { background-color: rgba(59, 130, 246, 0.15); }
+    .bg-purple-500\/15 { background-color: rgba(168, 85, 247, 0.15); }
+    .bg-indigo-500\/15 { background-color: rgba(99, 102, 241, 0.15); }
+    .bg-pink-500\/15 { background-color: rgba(236, 72, 153, 0.15); }
+    .grid { display: grid; }
+    .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .md\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+    .lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+    .gap-8 { gap: 2rem; }
+    .p-8 { padding: 2rem; }
+    .rounded-xl { border-radius: 0.75rem; }
+    .border { border-width: 1px; }
+    .border-gray-700 { border-color: #374151; }
+    .transition-all { transition: all 0.3s; }
+    .service-card:hover { border-color: #60a5fa; }
+    .overflow-x-hidden { overflow-x: hidden; }
+    
+    /* Gradientes */
+    .bg-gradient-to-r {
+      background: linear-gradient(to right, var(--tw-gradient-stops));
+    }
+    .from-blue-400 {
+      --tw-gradient-from: #60a5fa;
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(96, 165, 250, 0));
+    }
+    .to-purple-500 {
+      --tw-gradient-to: #a855f7;
+    }
+    .bg-clip-text {
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+    .text-transparent {
+      color: transparent;
+    }
+    
+    @media (max-width: 768px) {
+      .md\:grid-cols-3 { grid-template-columns: 1fr !important; }
+      .md\:grid-cols-4 { grid-template-columns: 1fr !important; }
+      .lg\:grid-cols-4 { grid-template-columns: 1fr !important; }
+      .service-card { margin-bottom: 2rem; }
+      .tech-card { margin-bottom: 2rem; }
+      .text-4xl { font-size: 2rem !important; }
+      .container { padding-left: 1rem; padding-right: 1rem; }
+    }
+    
+    /* Asegurar visibilidad de todas las secciones */
+    section {
+      min-height: auto;
+      display: block;
+    }
+    
+    /* Hero Section - Tamaño completo */
+    #inicio {
+      min-height: 100vh !important;
+      height: 100vh !important;
+      padding-top: 5rem !important;
+    }
+    
+    .hero-content {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #servicios {
+      background-color: rgba(31, 41, 55, 0.5) !important;
+      padding: 5rem 0 !important;
+    }
+    
+    /* Animación float para elementos flotantes */
+    @keyframes float {
+      0%, 100% { 
+        transform: translateY(0px); 
+      }
+      50% { 
+        transform: translateY(-20px); 
+      }
+    }
+    
+    .floating-element {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    /* Animaciones para hero - Visible por defecto, GSAP las manejará */
+    .hero-title-1, .hero-title-2, .hero-subtitle, .hero-buttons {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: translateY(0) !important;
+    }
+    
+    /* Texto más grande para hero en móvil */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 3rem !important;
+        line-height: 1.1 !important;
+      }
+      
+      .hero-content p {
+        font-size: 1.25rem !important;
+        line-height: 1.4 !important;
+      }
+      
+      #inicio {
+        padding-top: 4rem !important;
+      }
+    }
+    
+    /* Mejorar hover effects en tarjetas */
+    .service-card, .project-card, .tech-card {
+      transition: all 0.3s ease;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    
+    /* Estilos para formulario de contacto */
+    .mt-4 { margin-top: 1rem; }
+    .mt-1 { margin-top: 0.25rem; }
+    .p-4 { padding: 1rem; }
+    .hidden { display: none !important; }
+    .bg-green-600 { background-color: #059669; }
+    .bg-red-600 { background-color: #dc2626; }
+    .text-white { color: white; }
+    .text-red-400 { color: #f87171; }
+    .text-sm { font-size: 0.875rem; }
+    
+    /* Estados del formulario */
+    #form-message.success {
+      background-color: #065f46;
+      border: 1px solid #059669;
+      color: #d1fae5;
+    }
+    
+    #form-message.error {
+      background-color: #7f1d1d;
+      border: 1px solid #dc2626;
+      color: #fecaca;
+    }
+    
+    /* Loading state */
+    .loading {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+    
+    /* Validación de campos */
+    .field-error {
+      color: #f87171;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+    
+    /* Efectos de focus mejorados */
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #60a5fa !important;
+      box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1) !important;
+    }
+    
+    /* Estados de validación */
+    input.valid, textarea.valid {
+      border-color: #10b981 !important;
+    }
+    
+    input.invalid, textarea.invalid {
+      border-color: #ef4444 !important;
+    }
+    
+    /* Animación para mensajes */
+    #form-message {
+      animation: slideIn 0.3s ease-out;
+    }
+    
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <script type="module" src="/gsap-animations.js"></script>
+  <script type="module" src="/simple-contact.js"></script>
+</Layout>

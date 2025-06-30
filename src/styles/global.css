@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-900 text-white;
+  }
+
+  /* Ensure all animated elements are visible by default */
+  .hero-title-1, .hero-title-2, .hero-subtitle, .hero-buttons,
+  .services-title, .services-subtitle, .service-card,
+  .tech-title, .tech-subtitle, .tech-card,
+  .projects-title, .projects-subtitle, .project-card,
+  .contact-title, .contact-subtitle, .contact-info, .contact-form {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply inline-block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply inline-block border-2 border-blue-400 hover:bg-blue-400 hover:text-gray-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300;
+  }
+}

@@ -1,7 +1,5 @@
-import { defineCollection } from 'astro:content';
-import { docsLoader } from '@astrojs/starlight/loaders';
-import { docsSchema } from '@astrojs/starlight/schema';
+// No se necesitan content collections para esta landing page
+// Si en el futuro quieres agregar un blog o documentación, 
+// puedes configurar las collections aquí
 
-export const collections = {
-	docs: defineCollection({ loader: docsLoader(), schema: docsSchema() }),
-};
+export const collections = {};
