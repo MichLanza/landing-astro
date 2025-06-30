@@ -6,7 +6,6 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
 	integrations: [tailwind()],
 	// Configuración para GitHub Pages
-	// Descomenta las siguientes líneas si vas a usar GitHub Pages:
-	// site: 'https://tu-usuario.github.io',
-	// base: '/nombre-de-tu-repo',
+	site: 'https://TU_USUARIO.github.io',
+	base: '/TU_REPOSITORIO',
 });
